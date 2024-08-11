@@ -268,7 +268,7 @@ a {
 
 .text-blk.headingText {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
   color: rgb(176, 98, 255);
   padding-top: 0px;
@@ -279,6 +279,7 @@ a {
   margin-right: 0px;
   margin-bottom: 5px;
   margin-left: 0px;
+ font-family: fantasy;
 }
 
 .allText {
@@ -317,6 +318,7 @@ a {
 
 .text-blk.description {
   font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 26px;
   color: white;
   margin-top: 0px;
@@ -435,12 +437,14 @@ background-color: #4837ff;
 
 .purpleText {
   font-size: 18px;
+  font-weight: 700;
   line-height: 26px;
-  color: white;
+  color: black;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 10px;
   margin-left: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .ultimateImg {

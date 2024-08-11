@@ -7,7 +7,9 @@
   html{
     scroll-behavior: smooth;
   }
-  
+  a{
+    text-decoration: none;
+  }
   .navbar {
     background: #131313;
     height: 80px;
@@ -137,7 +139,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 50vh;
+      height: 60vh;
       font-size: 1.6rem;
     }
   
@@ -448,10 +450,13 @@
     top: 440px;
     left: 30px;
     font-size: 1rem;
+    transition: all 0.3s ease-in;
   }
   
   .services__card button:hover {
     cursor: pointer;
+    background-color: #4837ff;
+    transition: all 0.3s ease-in;
   }
   
   .services__card:hover {
