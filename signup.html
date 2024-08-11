@@ -1,80 +1,83 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="max-age=31536000">
-    <meta http-equiv="Expires" content="Wed, 07 Aug 2025 00:00:00 GMT">
-    <title>Next website</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet"> -->
-<link rel="preload" href="images/pic1.webp" as="image"> 
-<script src="https://kit.fontawesome.com/2131e2d5f4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" 
+          content="width=device-width, 
+                         initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" 
+          href="./signup.css">
 </head>
 
 <body>
-    <!-- Navbar Section -->
     <nav class="navbar" id="nav">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="./index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./index.html#services" class="navbar__links">Tech</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Products</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./aboutus.html" class="navbar__links">About us</a>
+            </li>
+            <li class="navbar__btn"><a href="#" class="button">Sign Up</a></li>
+          </ul>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#services" class="navbar__links">Tech</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Products</a>
-          </li>
-          <li class="navbar__item">
-            <a href="./aboutus.html" class="navbar__links">About us</a>
-          </li>
-          <li class="navbar__btn"><a href="./signup.html" class="button">Sign Up</a></li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    <!-- container div -->
+    <div class="container">
 
-    <!-- Hero Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>NEXT GENERATION</h1>
-          <h2>TECHNOLOGY</h2>
-          <p>See what makes up different.</p>
-          <button class="main__btn"><a href="#">Get Started</a></button>
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
         </div>
-        <div class="main__img--container">
-          <img id="main__img" src="images/pic1.webp" />
+
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+
+            <!-- login form -->
+            <div class="login-box">
+                <input type="email" 
+                       class="email ele" 
+                       placeholder="youremail@email.com">
+                <input type="password"
+                       class="password ele" 
+                       placeholder="password">
+                <button class="clkbtn">Login</button>
+            </div>
+
+            <!-- signup form -->
+            <div class="signup-box">
+                <input type="text" 
+                       class="name ele" 
+                       placeholder="Enter your name">
+                <input type="email" 
+                       class="email ele" 
+                       placeholder="youremail@email.com">
+                <input type="password" 
+                       class="password ele" 
+                       placeholder="password">
+                <input type="password" 
+                       class="password ele" 
+                       placeholder="Confirm password">
+                <button class="clkbtn">Signup</button>
+            </div>
         </div>
-      </div>
     </div>
-
-    <!-- Services Section -->
-    <div class="services" id="services">
-      <h1>See what the hype is about</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Experience Bliss</h2>
-          <p>AI Powered technology</p>
-          <button>Get Started</button>
-        </div>
-        <div class="services__card">
-          <h2>Are you Ready?</h2>
-          <p>Take the leap</p>
-          <button>Get Started</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
     <div class="footer__container">
       <div class="footer__links">
         <div class="footer__link--wrapper">
@@ -158,3 +161,7 @@
     <script src="app.js"></script>
   </body>
 </html> 
+    <script src="signup.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
